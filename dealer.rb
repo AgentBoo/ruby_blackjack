@@ -1,0 +1,16 @@
+@dealer_says = {
+  # :intro => "Dealer has #{@dealer_hand.sample(1)[0].name}. \nYou have $#{@@player_funds}. \n",
+  # :player_has => "Your cards are: #{ @player_hand.map{|card| card.name}.join(', ') }. The total is #{ @player_hand_value }. \n",
+  :piggybank => "\nYou currently have $#{@player_piggybank}. \n",
+  :busted => "Busted. You lost all $#{@bet}. \n",
+  :win => "You win! You get $#{@bet}. \n",
+  :blackjack => "Blackjack! You get $#{@bet}. \n",
+  # :one_card_visible => "One of two Dealer cards is #{@dealer_hand.sample(1)[0].name}. \n",
+  :dealer_turn => "\nVery well. Dealer's turn \n",
+  :dealer_draw => "Dealer drew a card. \n",
+  # :dealer_has => "Dealer has: #{ @dealer_hand.map{|card| card.name}.join(', ') }. The total is #{ @dealer_hand_value }. \n",
+  :dealer_blackjack => "Dealer's Blackjack! You lost $#{@bet}. \n",
+  :dealer_win => "Dealer wins. \n",
+  :new_game => "New Round! \n",
+  :goodbye => "Goodbye! \n",
+}
